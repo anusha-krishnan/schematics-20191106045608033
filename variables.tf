@@ -1,22 +1,26 @@
 variable "ibmcloud_api_key" {}
 variable "machine_type" {
-   default = "b2c.8x32"
+   default = "free"
 }
 variable "hardware" {
    default = "shared"
 }
 
 variable "datacenter" {
-  default = "wdc07"
+  default = "dal10"
 }
 
 variable "default_pool_size" {
-  default = "3"
+  default = "1"
 }
 
-variable "private_vlan_id" {}
+variable "private_vlan_id" {
+  default = ""
+}
 
-variable "public_vlan_id" {}
+variable "public_vlan_id" {
+  default = ""
+}
 
 variable "cluster_name" {
   default = "cluster"
