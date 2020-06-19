@@ -7,7 +7,7 @@ variable "hardware" {
 }
 
 variable "datacenter" {
-  default = "dal10"
+  default = "dal13"
 }
 
 variable "default_pool_size" {
